@@ -10,6 +10,7 @@ function Calculator() {
 
   const calculateResult = () => {
     try {
+      // eslint-disable-next-line no-eval
       setResult(eval(result).toString());
     } catch (error) {
       setResult('Error');
